@@ -1,7 +1,7 @@
-import { Controller, Get, Param, UseGuards, UsePipes } from '@nestjs/common';
+import { Controller, Get, Param, UsePipes } from '@nestjs/common';
 import { GamesService } from './games.service';
 import { Game } from './games.model';
-import { ObjectidPipe } from 'src/pipes/objectid/objectid.pipe';
+import { ObjectidPipe } from '../pipes/objectid/objectid.pipe';
 
 @Controller('games')
 export class GamesController {
